@@ -8,12 +8,11 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->publishDependencies();
-
-        $this->loadDependencies();
+        $this->publishDependencies()
+            ->loadDependencies();
     }
 
-    private function publishDependencies(): void
+    private function publishDependencies()
     {
         $this->publishes([
             __DIR__.'/app/Forms' => app_path('Forms'),
@@ -21,17 +20,29 @@ class AppServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/database/factories' => database_path('factories'),
-        ], 'measurement-units-factories');
+        ], 'measurement-unit-factories');
 
         $this->publishes([
             __DIR__.'/database/factories' => database_path('factories'),
         ], 'enso-factories');
+
+        $this->publishes([
+            __DIR__.'/database/seeds' => database_path('seeds'),
+        ], 'measurement-unit-seeders');
+
+        $this->publishes([
+            __DIR__.'/database/seeds' => database_path('seeds'),
+        ], 'enso-seeders');
+
+        return $this;
     }
 
-    private function loadDependencies(): void
+    private function loadDependencies()
     {
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
         $this->loadRoutesFrom(__DIR__.'/routes/api.php');
+
+        return $this;
     }
 }
