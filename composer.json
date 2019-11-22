@@ -1,5 +1,5 @@
 {
-    "name": "LaravelEnso/MeasurementUnits",
+    "name": "laravel-enso/measurement-units",
     "type": "library",
     "description": "Measurement units dependency for Laravel Enso",
     "keywords": [
