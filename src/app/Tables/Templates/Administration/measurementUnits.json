@@ -1,0 +1,39 @@
+{
+    "name": "Measurement Unit",
+    "routePrefix": "administration.measurementUnits",
+    "crtNo": true,
+    "buttons": [
+        "excel",
+        "create",
+        "edit",
+        "destroy"
+    ],
+    "columns": [
+        {
+            "label": "Name",
+            "name": "name",
+            "data": "measurement_units.name",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Description",
+            "name": "description",
+            "data": "measurement_units.description",
+            "meta": [
+                "searchable",
+                "sortable"
+            ]
+        },
+        {
+            "label": "Created At",
+            "name": "created_at",
+            "data": "user_groups.created_at",
+            "meta": [
+                "date"
+            ]
+        }
+    ]
+}

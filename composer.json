@@ -1,0 +1,45 @@
+{
+    "name": "LaravelEnso/MeasurementUnits",
+    "type": "library",
+    "description": "Measurement units dependency for Laravel Enso",
+    "keywords": [
+        "laravel-enso",
+        "measurement-units",
+        "units"
+    ],
+    "homepage": "https://github.com/laravel-enso/measurement-units",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mihai Ocneanu",
+            "email": "mihai.ocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Adrian Ocneanu",
+            "email": "aocneanu@gmail.com",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "laravel-enso/forms": "3.3.*",
+        "laravel-enso/migrator": "1.0.*",
+        "laravel-enso/select": "3.2.*",
+        "laravel-enso/tables": "3.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\MeasurementUnits\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\MeasurementUnits\\AppServiceProvider"
+            ]
+        }
+    }
+}
