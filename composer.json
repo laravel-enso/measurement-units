@@ -38,8 +38,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "LaravelEnso\\MeasurementUnits\\AppServiceProvider",
-                "LaravelEnso\\MeasurementUnits\\EnumServiceProvider"
+                "LaravelEnso\\MeasurementUnits\\AppServiceProvider"
             ]
         }
     }
