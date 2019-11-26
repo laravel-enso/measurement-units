@@ -15,7 +15,8 @@
             "data": "measurement_units.name",
             "meta": [
                 "searchable",
-                "sortable"
+                "sortable",
+                "translatable"
             ]
         },
         {
