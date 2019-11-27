@@ -1,14 +1,14 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Tables\Builders\Administration;
+namespace LaravelEnso\MeasurementUnits\app\Tables\Builders;
 
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use Illuminate\Database\Eloquent\Builder;
+use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use LaravelEnso\Tables\app\Contracts\Table;
 
 class MeasurementUnitTable implements Table
 {
-    protected const TemplatePath = __DIR__.'/../../Templates/Administration/measurementUnits.json';
+    protected const TemplatePath = __DIR__.'/../Templates/measurementUnits.json';
 
     public function query(): Builder
     {

@@ -7,7 +7,7 @@ use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 class MeasurementUnitsSeeder extends Seeder
 {
     private const UNITS = [
-        ['name' => 'Piece', 'description' => 'Piece'],
+        ['name' => 'Piece', 'description' => null],
     ];
 
     public function run()

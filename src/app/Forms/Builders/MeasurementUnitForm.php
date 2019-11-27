@@ -1,13 +1,13 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Forms\Builders\Administration;
+namespace LaravelEnso\MeasurementUnits\app\Forms\Builders;
 
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use LaravelEnso\Forms\app\Services\Form;
+use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 
 class MeasurementUnitForm
 {
-    protected const TemplatePath = __DIR__.'/../../Templates/Administration/measurementUnit.json';
+    protected const TemplatePath = __DIR__.'/../Templates/measurementUnit.json';
 
     protected $form;
 

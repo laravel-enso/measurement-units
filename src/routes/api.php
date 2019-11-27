@@ -1,7 +1,7 @@
 <?php
 Route::middleware(['web', 'auth', 'core'])
     ->group(function () {
-        Route::namespace('LaravelEnso\MeasurementUnits\app\Http\Controllers\Administration\MeasurementUnits')
+        Route::namespace('LaravelEnso\MeasurementUnits\app\Http\Controllers')
             ->prefix('api/administration/measurementUnits')->as('administration.measurementUnits.')
             ->group(function () {
                 Route::get('', 'Index')->name('index');
