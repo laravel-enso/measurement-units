@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/database/factories' => database_path('factories'),
-        ], 'measurement-unit-factories');
+        ], 'measurement-unit-factorie');
 
         $this->publishes([
             __DIR__.'/database/factories' => database_path('factories'),
@@ -28,7 +28,7 @@ class AppServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),
-        ], 'measurement-unit-seeders');
+        ], 'measurement-unit-seeder');
 
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),

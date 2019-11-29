@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Http\Controllers\Administration\MeasurementUnits;
+namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
 
 use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use Illuminate\Http\Request;
