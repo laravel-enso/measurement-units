@@ -17,7 +17,7 @@ class MeasurementUnitTable implements Table
         ');
     }
 
-    public function TemplatePath(): string
+    public function templatePath(): string
     {
         return static::TemplatePath;
     }

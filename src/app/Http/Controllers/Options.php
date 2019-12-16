@@ -2,9 +2,8 @@
 
 namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
 
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use LaravelEnso\Select\app\Traits\OptionsBuilder;
 
 class Options extends Controller

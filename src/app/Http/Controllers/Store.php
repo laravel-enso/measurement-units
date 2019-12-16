@@ -2,9 +2,9 @@
 
 namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
 
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use Illuminate\Routing\Controller;
 use LaravelEnso\MeasurementUnits\app\Http\Requests\ValidateMeasurementUnitRequest;
+use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 
 class Store extends Controller
 {
