@@ -18,7 +18,7 @@ class CreateStructureForMeasurementUnits extends Migration
     ];
 
     protected $menu = [
-        'name' => 'Measurement Units', 'icon' => 'balance-scale', 'route' => 'administration.measurementUnits.index', 'order_index' => 100, 'has_children' => false
+        'name' => 'Measurement Units', 'icon' => 'balance-scale', 'route' => 'administration.measurementUnits.index', 'order_index' => 450, 'has_children' => false
     ];
 
     protected $parentMenu = 'Administration';
