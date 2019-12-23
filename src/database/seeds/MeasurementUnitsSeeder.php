@@ -12,10 +12,10 @@ class MeasurementUnitsSeeder extends Seeder
 
     public function run()
     {
-        DB::transaction(function () {
-            collect(self::UNITS)->each(function ($units) {
-                factory(MeasurementUnit::class)->create($units);
-            });
-        });
+        DB::transaction(fn() => (
+            collect(self::UNITS)->each(fn($units) => (
+                factory(MeasurementUnit::class)->create($units)
+            ))
+        ));
     }
 }

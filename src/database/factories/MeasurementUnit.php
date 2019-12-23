@@ -5,9 +5,7 @@
 use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
 use Faker\Generator as Faker;
 
-$factory->define(MeasurementUnit::class, function (Faker $faker) {
-    return [
-        'name' => $faker->word,
-        'description' => $faker->sentence,
-    ];
-});
+$factory->define(MeasurementUnit::class, fn(Faker $faker) => [
+    'name' => $faker->word,
+    'description' => $faker->sentence,
+]);
