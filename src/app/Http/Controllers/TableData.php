@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
+namespace LaravelEnso\MeasurementUnits\App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeasurementUnits\app\Tables\Builders\MeasurementUnitTable;
-use LaravelEnso\Tables\app\Traits\Data;
+use LaravelEnso\MeasurementUnits\App\Tables\Builders\MeasurementUnitTable;
+use LaravelEnso\Tables\App\Traits\Data;
 
 class TableData extends Controller
 {

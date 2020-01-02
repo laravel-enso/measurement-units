@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
+use Illuminate\Support\Collection;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
 
 class MeasurementUnitsSeeder extends Seeder
 {
@@ -12,10 +12,7 @@ class MeasurementUnitsSeeder extends Seeder
 
     public function run()
     {
-        DB::transaction(function () {
-            collect(self::UNITS)->each(function ($units) {
-                factory(MeasurementUnit::class)->create($units);
-            });
-        });
+        (new Collection(self::UNITS))
+            ->each(fn ($units) => factory(MeasurementUnit::class)->create($units));
     }
 }

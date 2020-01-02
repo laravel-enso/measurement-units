@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Models;
+namespace LaravelEnso\MeasurementUnits\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelEnso\Helpers\app\Traits\AvoidsDeletionConflicts;
-use LaravelEnso\Rememberable\app\Traits\Rememberable;
-use LaravelEnso\Tables\app\Traits\TableCache;
+use LaravelEnso\Helpers\App\Traits\AvoidsDeletionConflicts;
+use LaravelEnso\Rememberable\App\Traits\Rememberable;
+use LaravelEnso\Tables\App\Traits\TableCache;
 
 class MeasurementUnit extends Model
 {

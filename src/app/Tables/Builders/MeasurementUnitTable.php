@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Tables\Builders;
+namespace LaravelEnso\MeasurementUnits\App\Tables\Builders;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
-use LaravelEnso\Tables\app\Contracts\Table;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\Tables\App\Contracts\Table;
 
 class MeasurementUnitTable implements Table
 {
@@ -12,9 +12,7 @@ class MeasurementUnitTable implements Table
 
     public function query(): Builder
     {
-        return MeasurementUnit::selectRaw('
-            id, name, description, created_at
-        ');
+        return MeasurementUnit::selectRaw('id, name, description, created_at');
     }
 
     public function templatePath(): string

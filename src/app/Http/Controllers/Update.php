@@ -1,14 +1,14 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
+namespace LaravelEnso\MeasurementUnits\App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeasurementUnits\app\Http\Requests\ValidateMeasurementUnitRequest;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
+use LaravelEnso\MeasurementUnits\App\Http\Requests\ValidateMeasurementUnitRequest as Request;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
 
 class Update extends Controller
 {
-    public function __invoke(ValidateMeasurementUnitRequest $request, MeasurementUnit $measurementUnit)
+    public function __invoke(Request $request, MeasurementUnit $measurementUnit)
     {
         $measurementUnit->update($request->validated());
 

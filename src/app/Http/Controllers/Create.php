@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
+namespace LaravelEnso\MeasurementUnits\App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeasurementUnits\app\Forms\Builders\MeasurementUnitForm;
+use LaravelEnso\MeasurementUnits\App\Forms\Builders\MeasurementUnitForm;
 
 class Create extends Controller
 {

@@ -8,20 +8,11 @@ class AppServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        $this->publishDependencies()
-            ->loadDependencies();
+        $this->load()
+            ->publish();
     }
 
-    private function publishDependencies()
-    {
-        $this->publishForms()
-            ->publishFactories()
-            ->publishSeeders();
-
-        return $this;
-    }
-
-    private function loadDependencies()
+    private function load()
     {
         $this->loadMigrationsFrom(__DIR__.'/database/migrations');
 
@@ -30,38 +21,14 @@ class AppServiceProvider extends ServiceProvider
         return $this;
     }
 
-    private function publishForms()
-    {
-        $this->publishes([
-            __DIR__.'/app/Forms' => app_path('Forms'),
-        ], 'forms');
-
-        return $this;
-    }
-
-    private function publishFactories()
+    private function publish()
     {
         $this->publishes([
             __DIR__.'/database/factories' => database_path('factories'),
-        ], 'measurement-unit-factories');
-
-        $this->publishes([
-            __DIR__.'/database/factories' => database_path('factories'),
-        ], 'enso-factories');
-
-        return $this;
-    }
-
-    private function publishSeeders()
-    {
-        $this->publishes([
-            __DIR__.'/database/seeds' => database_path('seeds'),
-        ], 'measurement-unit-seeder');
+        ], ['measurement-unit-factories', 'enso-factories']);
 
         $this->publishes([
             __DIR__.'/database/seeds' => database_path('seeds'),
-        ], 'enso-seeders');
-
-        return $this;
+        ], ['measurement-unit-seeder',  'enso-seeders']);
     }
 }

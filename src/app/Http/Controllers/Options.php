@@ -1,21 +1,14 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Http\Controllers;
+namespace LaravelEnso\MeasurementUnits\App\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
-use LaravelEnso\Select\app\Traits\OptionsBuilder;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\Select\App\Traits\OptionsBuilder;
 
 class Options extends Controller
 {
     use OptionsBuilder;
 
     protected $model = MeasurementUnit::class;
-
-    //protected $queryAttributes = ['name'];
-
-    //public function query(Request $request)
-    //{
-    //    return MeasurementUnit::query();
-    //}
 }

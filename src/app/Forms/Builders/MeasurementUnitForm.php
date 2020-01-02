@@ -1,15 +1,15 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\app\Forms\Builders;
+namespace LaravelEnso\MeasurementUnits\App\Forms\Builders;
 
-use LaravelEnso\Forms\app\Services\Form;
-use LaravelEnso\MeasurementUnits\app\Models\MeasurementUnit;
+use LaravelEnso\Forms\App\Services\Form;
+use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
 
 class MeasurementUnitForm
 {
     protected const TemplatePath = __DIR__.'/../Templates/measurementUnit.json';
 
-    protected $form;
+    protected Form $form;
 
     public function __construct()
     {
