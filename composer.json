@@ -25,6 +25,7 @@
     ],
     "require": {
         "php": ">=7.3.0",
+        "laravel-enso/core": "4.8.*",
         "laravel-enso/forms": "3.4.*",
         "laravel-enso/helpers": "1.15.*",
         "laravel-enso/migrator": "1.1.*",
