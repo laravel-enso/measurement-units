@@ -6,13 +6,13 @@ use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
 
 class MeasurementUnitsSeeder extends Seeder
 {
-    private const UNITS = [
+    private const Units = [
         ['name' => 'Piece', 'description' => null],
     ];
 
     public function run()
     {
-        (new Collection(self::UNITS))
+        (new Collection(self::Units))
             ->each(fn ($units) => factory(MeasurementUnit::class)->create($units));
     }
 }
