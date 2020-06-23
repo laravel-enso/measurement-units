@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\App\Forms\Builders;
+namespace LaravelEnso\MeasurementUnits\Forms\Builders;
 
-use LaravelEnso\Forms\App\Services\Form;
-use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\Forms\Services\Form;
+use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 
 class MeasurementUnitForm
 {

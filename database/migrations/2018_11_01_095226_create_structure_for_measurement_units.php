@@ -1,10 +1,10 @@
 <?php
 
-use LaravelEnso\Migrator\App\Database\Migration;
+use LaravelEnso\Migrator\Database\Migration;
 
 class CreateStructureForMeasurementUnits extends Migration
 {
-    protected $permissions = [
+    protected array $permissions = [
         ['name' => 'administration.measurementUnits.index', 'description' => 'Show index for measurement unit', 'is_default' => false],
         ['name' => 'administration.measurementUnits.create', 'description' => 'Create measurement unit', 'is_default' => false],
         ['name' => 'administration.measurementUnits.store', 'description' => 'Store a new measurement unit', 'is_default' => false],
@@ -17,9 +17,9 @@ class CreateStructureForMeasurementUnits extends Migration
         ['name' => 'administration.measurementUnits.options', 'description' => 'Get measurement unit options for select', 'is_default' => false],
     ];
 
-    protected $menu = [
+    protected array $menu = [
         'name' => 'Measurement Units', 'icon' => 'balance-scale', 'route' => 'administration.measurementUnits.index', 'order_index' => 450, 'has_children' => false,
     ];
 
-    protected $parentMenu = 'Administration';
+    protected ?string $parentMenu = 'Administration';
 }

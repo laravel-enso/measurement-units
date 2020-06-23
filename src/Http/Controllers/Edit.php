@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelEnso\MeasurementUnits\App\Http\Controllers;
+namespace LaravelEnso\MeasurementUnits\Http\Controllers;
 
 use Illuminate\Routing\Controller;
-use LaravelEnso\MeasurementUnits\App\Forms\Builders\MeasurementUnitForm;
-use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\MeasurementUnits\Forms\Builders\MeasurementUnitForm;
+use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 
 class Edit extends Controller
 {

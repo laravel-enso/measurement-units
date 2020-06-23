@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
-use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 
 class MeasurementUnitsSeeder extends Seeder
 {

@@ -1,6 +1,6 @@
 <?php
 
-use LaravelEnso\MeasurementUnits\App\Models\MeasurementUnit;
+use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 use Faker\Generator as Faker;
 
 $factory->define(MeasurementUnit::class, fn (Faker $faker) => [

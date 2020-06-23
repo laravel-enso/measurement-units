@@ -2,9 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::middleware(['web', 'auth', 'core'])
+Route::middleware(['api', 'auth', 'core'])
     ->group(function () {
-        Route::namespace('LaravelEnso\MeasurementUnits\App\Http\Controllers')
+        Route::namespace('LaravelEnso\MeasurementUnits\Http\Controllers')
             ->prefix('api/administration/measurementUnits')->as('administration.measurementUnits.')
             ->group(function () {
                 Route::get('create', 'Create')->name('create');
