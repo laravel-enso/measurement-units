@@ -1,6 +1,6 @@
 # Measurement Units
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/28c7bcb0b5d2451783990e0a151f0a44)](https://www.codacy.com/app/laravel-enso/measurement-units?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-enso/measurement-units&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/06e2805caccc4dc09b7c45899e7080f0)](https://www.codacy.com/gh/laravel-enso/measurement-units?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=laravel-enso/measurement-units&amp;utm_campaign=Badge_Grade) 
 [![StyleCI](https://github.styleci.io/repos/85624363/shield?branch=master)](https://github.styleci.io/repos/85624363)
 [![License](https://poser.pugx.org/laravel-enso/measurement-units/license)](https://packagist.org/packages/laravel-enso/measurement-units)
 [![Total Downloads](https://poser.pugx.org/laravel-enso/measurement-units/downloads)](https://packagist.org/packages/laravel-enso/measurement-units)
