@@ -1,9 +1,19 @@
 <?php
 
-use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
-use Faker\Generator as Faker;
+namespace LaravelEnso\MeasurementUnits\Database\Factories;
 
-$factory->define(MeasurementUnit::class, fn (Faker $faker) => [
-    'name' => $faker->unique()->word,
-    'description' => $faker->sentence,
-]);
+use Illuminate\Database\Eloquent\Factories\Factory;
+use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
+
+class MeasurementUnitFactory extends Factory
+{
+    protected $model = MeasurementUnit::class;
+
+    public function definition()
+    {
+        return [
+            'name' => $this->faker->unique()->word,
+            'description' => $this->faker->sentence,
+        ];
+    }
+}

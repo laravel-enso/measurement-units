@@ -25,7 +25,7 @@
     ],
     "require": {
         "php": ">=7.3.0",
-        "laravel-enso/core": "^5.0",
+        "laravel-enso/core": "^6.0",
         "laravel-enso/forms": "^4.0",
         "laravel-enso/helpers": "^2.0",
         "laravel-enso/migrator": "^2.0",
@@ -34,7 +34,9 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelEnso\\MeasurementUnits\\": "src/"
+            "LaravelEnso\\MeasurementUnits\\": "src/",
+            "LaravelEnso\\MeasurementUnits\\Database\\Factories\\": "database/factories/",
+            "LaravelEnso\\MeasurementUnits\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "extra": {

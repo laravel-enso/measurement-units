@@ -1,5 +1,7 @@
 <?php
 
+namespace LaravelEnso\MeasurementUnits\Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;

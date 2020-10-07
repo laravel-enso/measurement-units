@@ -25,7 +25,7 @@ class MeasurementUnitsTest extends TestCase
         $this->seed()
             ->actingAs(User::first());
 
-        $this->testModel = factory(MeasurementUnit::class)->make();
+        $this->testModel = MeasurementUnit::factory()->make();
     }
 
     /** @test */
