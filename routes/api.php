@@ -11,7 +11,6 @@ use LaravelEnso\MeasurementUnits\Http\Controllers\Store;
 use LaravelEnso\MeasurementUnits\Http\Controllers\TableData;
 use LaravelEnso\MeasurementUnits\Http\Controllers\Update;
 
-
 Route::middleware(['api', 'auth', 'core'])
     ->group(function () {
         Route::prefix('api/administration/measurementUnits')
