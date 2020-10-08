@@ -15,6 +15,6 @@ class MeasurementUnitsSeeder extends Seeder
     public function run()
     {
         (new Collection(self::Units))
-            ->each(fn ($units) => factory(MeasurementUnit::class)->create($units));
+            ->each(fn ($units) => MeasurementUnit::factory()->create($units));
     }
 }
