@@ -13,4 +13,6 @@ class MeasurementUnit extends Model
     use AvoidsDeletionConflicts, HasFactory, Rememberable, TableCache;
 
     protected $guarded = ['id'];
+
+     protected array $rememberableKeys = ['id', 'name'];
 }
