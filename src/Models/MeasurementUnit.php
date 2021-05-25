@@ -14,5 +14,5 @@ class MeasurementUnit extends Model
 
     protected $guarded = ['id'];
 
-     protected array $rememberableKeys = ['id', 'name'];
+    protected array $rememberableKeys = ['id', 'name'];
 }
