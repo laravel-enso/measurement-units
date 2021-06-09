@@ -23,6 +23,6 @@ class ValidateMeasurementUnitRequest extends FormRequest
     private function nameUnique()
     {
         return Rule::unique('measurement_units', 'name')
-            ->ignore(optional($this->route('measurementUnit'))->id);
+            ->ignore($this->route('measurementUnit')?->id);
     }
 }
