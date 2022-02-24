@@ -5,7 +5,7 @@ namespace LaravelEnso\MeasurementUnits\Http\Requests;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class ValidateMeasurementUnitRequest extends FormRequest
+class ValidateMeasurementUnit extends FormRequest
 {
     public function authorize()
     {
@@ -15,7 +15,7 @@ class ValidateMeasurementUnitRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => ['required', 'max:255', $this->nameUnique()],
+            'name'        => ['required', 'max:255', $this->nameUnique()],
             'description' => 'nullable|max:255',
         ];
     }
