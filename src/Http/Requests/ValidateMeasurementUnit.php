@@ -15,7 +15,7 @@ class ValidateMeasurementUnit extends FormRequest
     public function rules()
     {
         return [
-            'name'        => ['required', 'max:255', $this->nameUnique()],
+            'name' => ['required', 'max:255', $this->nameUnique()],
             'description' => 'nullable|max:255',
         ];
     }
