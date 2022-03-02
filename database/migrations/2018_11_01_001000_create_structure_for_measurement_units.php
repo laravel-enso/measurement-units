@@ -2,7 +2,7 @@
 
 use LaravelEnso\Migrator\Database\Migration;
 
-class CreateStructureForMeasurementUnits extends Migration
+return new class extends Migration
 {
     protected array $permissions = [
         ['name' => 'administration.measurementUnits.index', 'description' => 'Show index for measurement unit', 'is_default' => false],
@@ -22,4 +22,4 @@ class CreateStructureForMeasurementUnits extends Migration
     ];
 
     protected ?string $parentMenu = 'Administration';
-}
+};
