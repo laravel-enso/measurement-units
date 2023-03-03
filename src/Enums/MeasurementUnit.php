@@ -2,11 +2,11 @@
 
 namespace LaravelEnso\MeasurementUnits\Enums;
 
-use LaravelEnso\Enums\Traits\Enum;
+use LaravelEnso\Enums\Traits\Random;
 
 enum MeasurementUnit: int
 {
-    use Enum;
+    use Random;
 
     case Piece = 1;
 }
