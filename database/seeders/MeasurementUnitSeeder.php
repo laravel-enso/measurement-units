@@ -6,7 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 
-class MeasurementUnitsSeeder extends Seeder
+class MeasurementUnitSeeder extends Seeder
 {
     private const Units = [
         ['name' => 'Piece', 'description' => null],
