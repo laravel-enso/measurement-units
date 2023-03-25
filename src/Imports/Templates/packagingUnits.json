@@ -1,0 +1,20 @@
+{
+    "timeout": 3500,
+    "sheets": [
+        {
+            "name": "sheet1",
+            "importerClass": "LaravelEnso\\MeasurementUnits\\Imports\\Importers\\MeasurementUnits",
+            "chunkSize": 1000,
+            "columns": [
+                {
+                    "name": "name",
+                    "validations": "required|string|unique:measurement_units,name"
+                },
+                {
+                    "name": "description",
+                    "validations": "nullable|string|unique:measurement_units,description"
+                }
+            ]
+        }
+    ]
+}
