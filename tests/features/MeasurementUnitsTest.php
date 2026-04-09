@@ -8,6 +8,7 @@ use LaravelEnso\MeasurementUnits\Models\MeasurementUnit;
 use LaravelEnso\Tables\Traits\Tests\Datatable;
 use LaravelEnso\Users\Models\User;
 use Tests\TestCase;
+use PHPUnit\Framework\Attributes\Test;
 
 class MeasurementUnitsTest extends TestCase
 {
@@ -26,7 +27,7 @@ class MeasurementUnitsTest extends TestCase
         $this->testModel = MeasurementUnit::factory()->make();
     }
 
-    /** @test */
+    #[Test]
     public function can_store_service()
     {
         $response = $this->post(
@@ -45,7 +46,7 @@ class MeasurementUnitsTest extends TestCase
             ]);
     }
 
-    /** @test */
+    #[Test]
     public function can_update_service()
     {
         tap($this->testModel)->save()->name = 'updated';
@@ -62,7 +63,7 @@ class MeasurementUnitsTest extends TestCase
         );
     }
 
-    /** @test */
+    #[Test]
     public function get_option_list()
     {
         $this->testModel->save();
