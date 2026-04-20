@@ -74,6 +74,10 @@ Required Enso packages:
 - [`laravel-enso/select`](https://docs.laravel-enso.com/backend/select.html) [↗](https://github.com/laravel-enso/select)
 - [`laravel-enso/tables`](https://docs.laravel-enso.com/backend/tables.html) [↗](https://github.com/laravel-enso/tables)
 
+Companion frontend package:
+
+- [`@enso-ui/measurement-units`](https://docs.laravel-enso.com/frontend/measurement-units.html) [↗](https://github.com/enso-ui/measurement-units)
+
 ## Contributions
 
 are welcome. Pull requests are great, but issues are good too.
