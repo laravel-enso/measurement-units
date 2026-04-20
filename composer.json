@@ -1,7 +1,7 @@
 {
     "name": "laravel-enso/measurement-units",
     "type": "library",
-    "description": "Measurement units dependency for Laravel Enso",
+    "description": "Measurement unit management for Laravel Enso",
     "keywords": [
         "laravel-enso",
         "measurement-units",
